@@ -141,5 +141,5 @@ export function exercise3() {
   console.log('\r')
 
   const execute = measureExecutionTime(binarySearch)
-  console.log(`\r: O(log ${execute(telephonicList)})`)
+  console.log(`\rBig O: O(log ${execute(telephonicList)})`)
 }
