@@ -1,9 +1,8 @@
 import { exercise1 } from './exercises/1.1-exercise.ts';
 import { exercise2 } from './exercises/1.2-exercise.ts';
 import { exercise3 } from './exercises/1.3-exercise.ts';
-import {
-  exercise4
-} from './exercises/1.4-exercise.ts';
+import { exercise4 } from './exercises/1.4-exercise.ts';
+import { exercise5 } from './exercises/1.5-exercise.ts';
 
 exercise1()
 console.log('-----------------')
@@ -12,3 +11,5 @@ console.log('-----------------')
 exercise3()
 console.log('-----------------')
 exercise4()
+console.log('-----------------')
+exercise5()
