@@ -111,7 +111,7 @@ export function exercise4() {
   function binarySearch(items: [{
     name: string,
     tel: number
-  }], tel: number) {
+  }]) {
     let results = []
 
     for(let i = 0; i <= items.length; i++) {
