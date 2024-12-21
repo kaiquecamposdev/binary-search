@@ -3,6 +3,7 @@ import { exercise2 } from './exercises/1.2-exercise.ts';
 import { exercise3 } from './exercises/1.3-exercise.ts';
 import { exercise4 } from './exercises/1.4-exercise.ts';
 import { exercise5 } from './exercises/1.5-exercise.ts';
+import { executeOrdering } from './exercises/ordering.ts';
 
 exercise1()
 console.log('-----------------')
@@ -13,3 +14,5 @@ console.log('-----------------')
 exercise4()
 console.log('-----------------')
 exercise5()
+console.log('-----------------')
+executeOrdering()
