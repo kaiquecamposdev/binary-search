@@ -4,7 +4,9 @@ export function measureExecutionTime(func: Function) {
     const end = performance.now();
     const executionTime = end - start;
     const result = func(...args);
-    console.log(`Execution time of ${func.name}: ${executionTime.toFixed(2)}ms`);
+    console.log(`\r
+    Execution time of ${func.name}: ${executionTime.toFixed(2)}ms
+    `);
     return result;
   };
 }
