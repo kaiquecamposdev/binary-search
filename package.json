@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx --watch src/index.js"
+    "dev": "npx tsx --watch ./main.ts"
   },
   "keywords": [],
   "author": "",
