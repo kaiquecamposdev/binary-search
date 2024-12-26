@@ -1,11 +1,12 @@
 
 
 
-const binarySearch = (item: number, items: number[]) => {
+const binarySearch = (items: number[], item: number) => {
   let low = 0
   let high = items.length - 1
   let middle = 0
   let attempt = 0
+
   // base case
   let results = []
 
@@ -17,11 +18,9 @@ const binarySearch = (item: number, items: number[]) => {
 
     if (attempt === item) { 
       return results.length
-    }
-    if (attempt > item) { 
+    } else if (attempt > item) { 
       high = middle - 1
-    } 
-    if (attempt < item) { 
+    } else {
       low = middle + 1
     }
   }
@@ -30,14 +29,12 @@ const binarySearch = (item: number, items: number[]) => {
 }
 
 export const binarySearchEx = () => {
-  let numbers = []
+  const createArr = (i: number) => Array.from({ length: i }, (v, k) => k + 1);
 
-  for (let i = 0; i <= 100; i++) {
-    numbers.push(i)
-  }
+  const items = createArr(100);
 
   console.log(`
     Exercise 1.1 -> Binary search\r
-    Max iterations: ${binarySearch(53, numbers)}
+    Max iterations: ${binarySearch(items, 53)}
   `)
 }
