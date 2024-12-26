@@ -21,5 +21,8 @@ export const recursiveBinarySearchEx = () => {
 
   const items = createArr(100);
 
-  console.log(recursiveBinarySearch(items, 54))
+  console.log(`
+    Exercise 4.4 -> Recursive Binary Search
+    Max iterations: ${recursiveBinarySearch(items, 54)}
+  `)
 }
