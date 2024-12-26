@@ -7,5 +7,8 @@ const maxValue = (numbers: number[]) => {
 export const maxValueEx = () => {
   const numbers = [0, 3, 2, 1, 23, 9, 42, 44, 12, 5, 88, 24]
 
-  console.log(maxValue(numbers))
+  console.log(`
+    Code Example -> Max Value\n
+    ${maxValue(numbers)}
+  `)
 }

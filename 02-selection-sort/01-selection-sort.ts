@@ -30,9 +30,9 @@ export const selectionSortEx = () => {
   const arr = [5, 3, 6, 2, 10, 4, 0]
 
   console.log(`
-    Selection Sort\r
-    ${arr} \n
-    The index of the smallest number in the array is: ${findSmallestIndex(arr)} \n
-    The array ${arr} sorted is: ${selectionSort(arr)}
+    Code Example -> Selection Sort\n
+    The index of the smallest number: ${findSmallestIndex(arr)}
+    The array: ${arr}
+    Sorted is: ${selectionSort(arr)}
   `)
 }

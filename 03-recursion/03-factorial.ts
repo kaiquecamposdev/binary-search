@@ -4,5 +4,8 @@ const fact = (x: number): number => {
 };
 
 export const factorialEx = () => {
-  console.log(fact(5));
+  console.log(`
+    Code Example -> Recursion: Factorial\n
+    ${fact(5)}
+  `);
 }

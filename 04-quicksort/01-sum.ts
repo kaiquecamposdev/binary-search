@@ -11,5 +11,8 @@ const sum = (numbers: number[]): number => {
 export const sumEx = () => {
   const numbers = [1, 9, 10, 32, 54, 22]
 
-  console.log(sum(numbers))
+  console.log(`
+    Code Example -> Quicksort: Sum\n
+    ${sum(numbers)}
+  `)
 }
