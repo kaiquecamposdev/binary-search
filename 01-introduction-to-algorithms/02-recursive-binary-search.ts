@@ -1,4 +1,4 @@
-export function recursiveBinarySearch(items: number[], item: number, low: number = 0, high: number = items.length - 1, results: number[] = []) {
+export function recursiveBinarySearch(items: number[], item: number, low: number = 0, high: number = items.length - 1, results: number[] = [] /* base case */) {
   if (low > high) return null
 
   // recursive case
