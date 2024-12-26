@@ -13,6 +13,8 @@ const binarySearch = (item: number, items: number[]) => {
     middle = Math.ceil((low + high) / 2)
     attempt = items[middle]
 
+    results.push(attempt)
+
     if (attempt === item) { 
       return results.length
     }
@@ -22,8 +24,6 @@ const binarySearch = (item: number, items: number[]) => {
     if (attempt < item) { 
       low = middle + 1
     }
-
-    results.push(attempt)
   }
 
   return results.length
