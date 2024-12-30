@@ -13,5 +13,5 @@ export const hashTableEx = () => {
   const key = 'Milk'
   
   console.log(book)
-  console.log(`${key}: ` + book.get(key))
+  console.log(`${key}: ${book.get(key)}`)
 } 
