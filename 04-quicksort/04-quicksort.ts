@@ -1,22 +1,24 @@
 
 const quicksort = (arr: number[]): number[] => {
-  if (arr.length < 2) {
-    return arr
-  } else {
-    const pivot = arr[0]
-    let minors = arr.slice(1).filter((i) => i <= pivot)
-    let bigger = arr.slice(1).filter((i) => i > pivot)
+  if (arr.length < 2) return arr
 
-    return [
-      ...quicksort(minors), 
-      ...[pivot], 
-      ...quicksort(bigger)
-    ]
-  }
+  const last = arr.length - 1
+  const pivot = arr[last]
+  let minors = arr.slice(1).filter((i) => i < pivot)
+  let biggers = arr.slice(1).filter((i) => i > pivot)
+
+  console.log(minors)
+  console.log(biggers)
+
+  return [
+    ...quicksort(minors), 
+    ...[pivot], 
+    ...quicksort(biggers)
+  ]
 }
 
 export const quicksortEx = () => {
-  const arr = [10, 3, 5, 2, 1, 6, 9, 8]
+  const arr = [10, 3, 5, 2, 1, 6, 9, 8, 4]
 
   console.log(`
     Code Example -> Quicksort: quicksort
