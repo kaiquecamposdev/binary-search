@@ -1,16 +1,16 @@
 const telephonicList = () => {
-  const list = new Map()
+  const list = {} as Record<string, number>
 
-  list.set('Jenny', 80809321831)
-  list.set('Emergency', 911)
+  list.jenny = 80809321831
+  list.emergency = 911
 
   return list
 }
 
 export const telephonicListEx = () => {
   const list = telephonicList()
-  const key = 'Jenny'
+  const key = 'jenny'
 
   console.log(list)
-  console.log(`${key}: ${list.get(key)}`)
+  console.log(`${key}: ${list[key]}`)
 }
