@@ -1,4 +1,4 @@
-const hashTable = () => {
+const priceBook = () => {
   const book = new Map()
   
   book.set("Apple", 0.67)
@@ -8,8 +8,8 @@ const hashTable = () => {
   return book
 }
 
-export const hashTableEx = () => {
-  const book = hashTable()
+export const priceBookEx = () => {
+  const book = priceBook()
   const key = 'Milk'
   
   console.log(book)
