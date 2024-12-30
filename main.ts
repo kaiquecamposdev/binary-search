@@ -9,6 +9,7 @@ import { recursiveCountEx } from "./04-quicksort/02-recursive-count.ts"
 import { maxValueEx } from "./04-quicksort/03-max-value.ts"
 import { quicksortEx } from "./04-quicksort/04-quicksort.ts"
 import { hashTableEx } from "./05-hash-tables/01-hash-table.ts"
+import { telephonicListEx } from "./05-hash-tables/02-telephonic-list.ts"
 
 console.log('-----------------')
 binarySearchEx()
@@ -32,4 +33,6 @@ console.log('-----------------')
 quicksortEx()
 console.log('-----------------')
 hashTableEx()
+console.log('-----------------')
+telephonicListEx()
 console.log('-----------------')
