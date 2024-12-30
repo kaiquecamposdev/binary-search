@@ -8,8 +8,9 @@ import { sumEx } from "./04-quicksort/01-sum.ts"
 import { recursiveCountEx } from "./04-quicksort/02-recursive-count.ts"
 import { maxValueEx } from "./04-quicksort/03-max-value.ts"
 import { quicksortEx } from "./04-quicksort/04-quicksort.ts"
-import { hashTableEx } from "./05-hash-tables/01-hash-table.ts"
+import { priceBookEx } from "./05-hash-tables/01-price-book.ts"
 import { telephonicListEx } from "./05-hash-tables/02-telephonic-list.ts"
+import { verifyVoterEx } from "./05-hash-tables/03-verify-voter.ts"
 
 console.log('-----------------')
 binarySearchEx()
@@ -32,7 +33,9 @@ maxValueEx()
 console.log('-----------------')
 quicksortEx()
 console.log('-----------------')
-hashTableEx()
+priceBookEx()
 console.log('-----------------')
 telephonicListEx()
+console.log('-----------------')
+verifyVoterEx()
 console.log('-----------------')
