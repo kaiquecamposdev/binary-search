@@ -13,6 +13,7 @@ import { telephonicListEx } from "./05-hash-tables/02-telephonic-list.ts"
 import { verifyVoterEx } from "./05-hash-tables/03-verify-voter.ts"
 import { breadthFirstSearchEx } from "./06-breadth-first-search/01-breadth-first-search.ts"
 import { dijkstraAlgorithmEx } from "./07-dijkstra-algorithm/01-dijkstra-algorithm.ts"
+import { bestStationsEx } from "./08-greedy-algorithms/01-best-stations.ts"
 
 console.log('-----------------')
 binarySearchEx()
@@ -44,4 +45,6 @@ console.log('-----------------')
 breadthFirstSearchEx()
 console.log('-----------------')
 dijkstraAlgorithmEx()
+console.log('-----------------')
+bestStationsEx()
 console.log('-----------------')
