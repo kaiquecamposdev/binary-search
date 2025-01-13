@@ -62,9 +62,15 @@ const findNodeLowestCost = (costs) => {
     }
   })
 
-  return lowestCostNode
+  return {
+    costs,
+    lowestCostNode
+  }
 }
 
 export const dijkstraAlgorithmEx = () => {
-  console.log(dijkstraAlgorithm())
+  const obj = dijkstraAlgorithm()
+  
+  console.log(`Costs: ${JSON.stringify(obj.costs)}`)
+  console.log(`Lowest cost node: ${obj.lowestCostNode}`)
 }
