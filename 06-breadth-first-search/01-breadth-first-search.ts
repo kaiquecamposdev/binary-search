@@ -9,7 +9,7 @@ graph.thom = [];
 graph.jonny = [];
 
 const breadthFirstSearch = (name: string) => {
-  const personIsSeller = (name: string) => name[name.length - 1] === "m";
+  const personIsSeller = (name: string) => name[name.length - 1] === "m"
   let searchQueue = [...graph[name]];
   const searched = [];
 
@@ -22,6 +22,7 @@ const breadthFirstSearch = (name: string) => {
 
         return true;
       }
+
       searchQueue = searchQueue.concat(graph[person]);
       searched.push(person);
     }
