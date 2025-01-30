@@ -32,10 +32,11 @@ const dijkstraAlgorithm = () => {
     let cost = costs[node]
     let neighbors = graph[node]
     
-    for (let n in neighbors.keys()) {
+    for (let n in neighbors.keys()) { 
       let newCost = cost + neighbors[n]
+      let oldCost = costs[n]
 
-      if (costs[n] > newCost) {
+      if (oldCost > newCost) {
         costs[n] = newCost
         neighbors[n] = node
       }
